@@ -10,6 +10,18 @@ const categories: { label: string; value: PortfolioCategory }[] = [
   { label: "Websites", value: "websites" },
 ];
 
+const isDirectVideo = (url?: string) => {
+  if (!url) return false;
+  return (
+    url.endsWith(".mp4") ||
+    url.endsWith(".webm") ||
+    url.endsWith(".ogg") ||
+    url.startsWith("/portfolio/") ||
+    url.startsWith("/videos/") ||
+    url.startsWith("/assets/")
+  );
+};
+
 export default function Portfolio() {
   const [activeCategory, setActiveCategory] = useState<PortfolioCategory>("all");
   const [selectedItem, setSelectedItem] = useState<PortfolioItem | null>(null);
@@ -78,6 +90,28 @@ export default function Portfolio() {
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                       loading="lazy"
                     />
+                  ) : isDirectVideo(item.videoUrl) ? (
+                    <div className="w-full h-full relative overflow-hidden bg-black flex items-center justify-center">
+                      <video
+                        src={item.videoUrl}
+                        muted
+                        loop
+                        playsInline
+                        preload="metadata"
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        onMouseEnter={(e) => {
+                          e.currentTarget.play().catch(() => {});
+                        }}
+                        onMouseLeave={(e) => {
+                          e.currentTarget.pause();
+                          e.currentTarget.currentTime = 0;
+                        }}
+                      />
+                      <div className="absolute top-2.5 right-2.5 px-2 py-0.5 rounded-md bg-black/70 backdrop-blur-md border border-white/10 text-[10px] font-semibold text-purple-300 flex items-center gap-1 pointer-events-none">
+                        <Play className="w-2.5 h-2.5 fill-purple-300" />
+                        <span>Hover to Preview</span>
+                      </div>
+                    </div>
                   ) : (
                     /* Clean 2D placeholder preview */
                     <div className="w-full h-full flex flex-col items-center justify-center p-6 text-center bg-gradient-to-br from-zinc-900 to-zinc-950">
@@ -95,7 +129,7 @@ export default function Portfolio() {
                   )}
 
                   {/* Hover Overlay */}
-                  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
                     <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white text-zinc-950 text-xs font-semibold shadow-md">
                       {item.category === "websites" ? "View Project" : "Watch Video"}
                       <ExternalLink className="w-3.5 h-3.5" />
@@ -166,13 +200,23 @@ export default function Portfolio() {
               {/* Modal Media Area */}
               <div className="aspect-video bg-black flex items-center justify-center relative">
                 {selectedItem.videoUrl ? (
-                  <iframe
-                    src={selectedItem.videoUrl}
-                    title={selectedItem.title}
-                    className="w-full h-full border-0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  />
+                  isDirectVideo(selectedItem.videoUrl) ? (
+                    <video
+                      src={selectedItem.videoUrl}
+                      controls
+                      autoPlay
+                      playsInline
+                      className="w-full h-full object-contain bg-black"
+                    />
+                  ) : (
+                    <iframe
+                      src={selectedItem.videoUrl}
+                      title={selectedItem.title}
+                      className="w-full h-full border-0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
+                  )
                 ) : (
                   <div className="p-8 text-center flex flex-col items-center">
                     <Video className="w-12 h-12 text-purple-400/50 mb-3" />
