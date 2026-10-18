@@ -42,7 +42,7 @@ export default function InstagramSection() {
 
                 <div>
                   <h3 className="text-lg font-bold text-white flex items-center justify-center sm:justify-start gap-2">
-                    MF Creative Studio
+                    AI Video Ads
                     <span className="w-2 h-2 rounded-full bg-purple-500 inline-block" />
                   </h3>
                   <p className="text-xs text-zinc-400 mt-0.5">

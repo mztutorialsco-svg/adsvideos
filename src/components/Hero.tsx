@@ -27,7 +27,7 @@ export default function Hero() {
             <div className="absolute -inset-1 bg-gradient-to-r from-purple-600/30 to-blue-500/30 rounded-2xl blur-lg group-hover:opacity-100 transition-opacity opacity-70" />
             <img
               src="/logo-cropped.png"
-              alt="MF Creative Studio"
+              alt="AI Video Ads"
               className="relative h-20 sm:h-24 w-auto object-contain rounded-xl drop-shadow-md"
             />
           </div>

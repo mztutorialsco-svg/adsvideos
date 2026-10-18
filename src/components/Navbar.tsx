@@ -52,11 +52,11 @@ export default function Navbar() {
           >
             <img
               src="/logo-cropped.png"
-              alt="MF Creative Studio Logo"
+              alt="AI Video Ads Logo"
               className="h-10 w-auto object-contain rounded-lg transition-transform duration-300 group-hover:scale-105"
             />
             <span className="font-bold text-lg tracking-tight text-white group-hover:text-zinc-200 transition-colors hidden sm:inline">
-              MF Creative <span className="text-purple-400 font-semibold">Studio</span>
+              AI Video <span className="text-purple-400 font-semibold">Ads</span>
             </span>
           </a>
 

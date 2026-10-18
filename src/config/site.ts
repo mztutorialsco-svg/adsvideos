@@ -1,6 +1,6 @@
 /**
  * ============================================================
- * MF CREATIVE STUDIO — CONFIGURATION FILE
+ * AI VIDEO ADS — CONFIGURATION FILE
  * ============================================================
  * Easily update your contact details, Instagram URL, and portfolio
  * items in this file.
@@ -9,11 +9,11 @@
 
 // ─── BRAND ───────────────────────────────────────────────────
 export const BRAND = {
-  name: "MF Creative Studio",
-  tagline: "Creative Videos. Modern Websites. Digital Experiences.",
-  heroHeadline: "CREATIVE VIDEOS. AMAZING WEBSITES.",
+  name: "AI Video Ads",
+  tagline: "Creative AI Video Ads. Animated Videos. Modern Websites.",
+  heroHeadline: "AI VIDEO ADS. MODERN WEBSITES.",
   heroDescription:
-    "I create engaging video advertisements, AI cartoon animations, and modern websites for creators and businesses.",
+    "I create engaging AI video advertisements, cartoon animations, and modern websites for creators and businesses.",
   logo: "/logo-cropped.png",
 };
 
@@ -40,9 +40,9 @@ export const SOCIAL = {
 
 // ─── SEO METADATA ────────────────────────────────────────────
 export const SEO = {
-  title: "MF Creative Studio | Video Advertisements, Animated Videos & Modern Websites",
+  title: "AI Video Ads | Video Advertisements, Animated Videos & Modern Websites",
   description:
-    "MF Creative Studio creates engaging video advertisements, AI cartoon animations, and modern responsive websites for creators and businesses. Contact: 8341284478.",
+    "AI Video Ads creates engaging video advertisements, AI cartoon animations, and modern responsive websites for creators and businesses. Contact: 8341284478.",
   ogImage: "/logo-cropped.png",
 };
 

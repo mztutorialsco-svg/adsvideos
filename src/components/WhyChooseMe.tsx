@@ -41,7 +41,7 @@ export default function WhyChooseMe() {
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <p className="text-xs font-bold tracking-widest text-purple-400 uppercase mb-3">
-            Why Choose MF Creative Studio
+            Why Choose AI Video Ads
           </p>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">
             Why Work With Me

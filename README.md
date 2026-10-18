@@ -1,6 +1,6 @@
-# MF Creative Studio — Official Website
+# AI Video Ads — Official Website
 
-A complete, modern, professional animated website for **MF Creative Studio** specializing in engaging video advertisements, AI cartoon animations, and modern responsive website development.
+A complete, modern, professional animated website for **AI Video Ads** specializing in engaging video advertisements, AI cartoon animations, and modern responsive website development.
 
 ---
 
@@ -16,8 +16,8 @@ A complete, modern, professional animated website for **MF Creative Studio** spe
 ## 🚀 Sections & Features
 
 1. **Modern 2D Hero**:
-   - Headline: **“CREATIVE VIDEOS. AMAZING WEBSITES.”**
-   - Tagline: *“I create engaging video advertisements, AI cartoon animations, and modern websites for creators and businesses.”*
+   - Headline: **“AI VIDEO ADS. MODERN WEBSITES.”**
+   - Tagline: *“I create engaging AI video advertisements, cartoon animations, and modern websites for creators and businesses.”*
    - Clean action buttons: **Explore My Work** (scrolls to portfolio) and **Contact Me** (scrolls to contact).
    - Subtle 2D text reveals and service indicator pills.
 
@@ -54,8 +54,8 @@ A complete, modern, professional animated website for **MF Creative Studio** spe
    - **“Call Now”** button linking to `tel:+918341284478`.
 
 7. **Footer**:
-   - Brand: **MF Creative Studio**.
-   - Tagline: *“Creative Videos. Modern Websites. Digital Experiences.”*
+   - Brand: **AI Video Ads**.
+   - Tagline: *“Creative AI Video Ads. Animated Videos. Modern Websites.”*
    - Quick links to Instagram, WhatsApp, Services, Portfolio, and Contact, plus smooth back-to-top button.
 
 ---

@@ -25,7 +25,7 @@ export default function Footer() {
             <div className="flex items-center gap-3 mb-4">
               <img
                 src="/logo-cropped.png"
-                alt="MF Creative Studio Logo"
+                alt="AI Video Ads Logo"
                 className="h-10 w-auto object-contain rounded-lg"
               />
               <span className="font-bold text-lg text-white">
@@ -137,7 +137,7 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-zinc-500">
-          <p>© {new Date().getFullYear()} MF Creative Studio. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} {BRAND.name}. All rights reserved.</p>
 
           <button
             onClick={scrollToTop}
